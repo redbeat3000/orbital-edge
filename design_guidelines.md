@@ -11,24 +11,25 @@
 ## Color Palette
 
 ### Dark Mode Foundation
-- **Background Base**: 8 8% 4% (deep space black)
-- **Surface Elevated**: 220 12% 8% (card backgrounds)
-- **Surface Higher**: 220 10% 12% (interactive elements)
+- **Background Base**: 0 0% 0% (pure black)
+- **Surface Elevated**: 20 15% 8% (card backgrounds)
+- **Surface Higher**: 24 20% 12% (interactive elements)
 
 ### Primary Brand Colors
-- **Orbital Blue**: 195 100% 65% (primary actions, accents, orbital paths)
-- **Deep Space Navy**: 220 25% 18% (secondary surfaces)
+- **Orbital Orange**: 24 97% 55% (primary actions, accents, orbital paths)
+- **Warm Charcoal**: 24 25% 20% (secondary surfaces)
 
 ### Accent & Status Colors
-- **Success Green**: 142 70% 55% (active satellites, successful bookings)
-- **Warning Amber**: 38 92% 58% (orbit warnings, time-sensitive)
+- **Bright Amber**: 18 90% 55% (active satellites, successful bookings)
+- **Warning Gold**: 30 85% 65% (orbit warnings, time-sensitive)
 - **Danger Red**: 0 84% 60% (debris zones, critical alerts)
-- **Neutral Gray**: 220 8% 55% (text secondary, borders)
+- **Neutral Gray**: 0 0% 70% (text secondary, borders)
 
 ### Glows & Effects
-- Orbital paths: Use Orbital Blue with 0.6 opacity, 20px blur for glow effects
-- Active payload slots: Pulsing animation with Success Green
-- Hover states: Increase brightness by 10%, add subtle shadow
+- Orbital paths: Use Orbital Orange with 0.5 opacity, 24px blur for glow effects
+- Active payload slots: Pulsing animation with Bright Amber
+- Hover states: Orange glow effect with subtle shadow
+- Border glows: 24 100% 70% with 0.3 opacity
 
 ---
 
@@ -86,8 +87,8 @@
 
 ### Marketplace Cards
 - **Container**: Rounded-2xl with border border-white/10
-- **Background**: Gradient from deep-space-navy to transparent
-- **Hover State**: Transform scale-105, border-orbital-blue transition-all duration-300
+- **Background**: Gradient from warm-charcoal to transparent
+- **Hover State**: Transform scale-105, border-orbital-orange transition-all duration-300
 - **Structure**: 
   - Top: 3D payload thumbnail (square aspect, rounded-lg)
   - Middle: Provider badge, slot ID (monospace), service type icons
@@ -99,7 +100,7 @@
 - **Controls**: Bottom-right floating control panel (zoom, rotate, auto-rotate toggle)
 - **Overlay Elements**: SVG orbital paths with animated dashed lines
 - **Payload Markers**: Pulsing dots with on-hover info cards
-- **Atmosphere Glow**: Outer ring with radial gradient cyan to transparent
+- **Atmosphere Glow**: Outer ring with radial gradient orange to transparent
 
 ### Orbital Simulator
 - **Layout**: Split-screen on desktop (60/40)
@@ -114,12 +115,12 @@
 - **Log Console**: Bottom panel with monospace text, syntax highlighting for JSON data
 
 ### Buttons
-- **Primary**: bg-orbital-blue hover:brightness-110 text-white px-8 py-3 rounded-lg font-semibold
-- **Secondary**: border-2 border-orbital-blue text-orbital-blue hover:bg-orbital-blue/10
+- **Primary**: bg-orbital-orange hover:brightness-110 text-white px-8 py-3 rounded-lg font-semibold
+- **Secondary**: border-2 border-orbital-orange text-orbital-orange hover:bg-orbital-orange/10
 - **Outline on Images**: backdrop-blur-md bg-white/10 border border-white/20 hover:bg-white/20
 
 ### Forms
-- **Input Fields**: bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-orbital-blue focus:ring-2 focus:ring-orbital-blue/50
+- **Input Fields**: bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-orbital-orange focus:ring-2 focus:ring-orbital-orange/50
 - **Labels**: text-sm font-medium text-gray-300 mb-2
 - **File Upload**: Dashed border with upload icon, drag-and-drop zone
 
@@ -195,7 +196,7 @@ All images should maintain dark theme compatibility with subtle borders or shado
 
 ## Accessibility
 
-- Maintain WCAG AA contrast (4.5:1 minimum) - all text on dark backgrounds uses gray-100 or lighter
-- Focus states: ring-2 ring-orbital-blue ring-offset-2 ring-offset-black
+- Maintain WCAG AA contrast (4.5:1 minimum) - all text on dark backgrounds uses white or light gray
+- Focus states: ring-2 ring-orbital-orange ring-offset-2 ring-offset-black
 - 3D canvas: Provide "Skip to content" link, descriptive alt attributes for fallback images
 - Form inputs: Always dark backgrounds with light text, proper label associations
