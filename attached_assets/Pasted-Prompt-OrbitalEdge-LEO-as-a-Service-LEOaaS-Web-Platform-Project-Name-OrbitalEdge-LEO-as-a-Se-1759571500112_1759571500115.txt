@@ -1,0 +1,180 @@
+Prompt: OrbitalEdge— LEO-as-a-Service (LEOaaS) Web Platform
+
+Project Name: OrbitalEdge — LEO-as-a-Service (LEOaaS)
+Tagline: Launch less. Do more in orbit.
+
+Project Definition:
+OrbitalHub is a web-based platform that provides modular, on-demand access to Low Earth Orbit (LEO) resources for research labs, startups, and universities. It functions as a marketplace for rentable orbital payload slots and on-orbit microservices such as computing, data storage, thermal cycling, and sample return. The platform allows small teams to run experiments, deploy microservices, or test hardware in LEO without launching a full satellite, reducing cost and complexity while increasing accessibility to space.
+
+Core Features:
+
+Marketplace: Providers (rideshare launches, satellite hosts, CubeSat integrators) list available payload slots and on-orbit services. Customers browse and book slots for experiments or services.
+
+Scheduling & Simulation: Shows orbital windows, cost estimates, and mission timelines. Users can simulate their payload’s orbit and service duration.
+
+Experiment & Data Management: Upload experiment code or data, monitor telemetry and execution results, request sample-return capsules if needed.
+
+Technical Integration: Standardized modular payload adapter, API for scheduling, uploading, monitoring, and requesting returns.
+
+Business Management: Handles manifests, insurance, regulatory compliance, and rideshare matchmaking.
+
+Target Users:
+
+University research labs (microgravity experiments, material science, biotech)
+
+Startups testing edge-AI, Earth-observation sensors, or in-space computing
+
+CubeSat integrators needing short-term hosting
+
+Key Benefits:
+
+Reduces cost and lead time compared to launching full satellites
+
+Standardized modular interface simplifies integration
+
+Provides scalable, pay-per-use access to space resources
+
+Encourages commercial R&D in LEO responsibly and safely
+
+Design & UX Requirements:
+
+Homepage: Animated 3D Earth orbit with rotating satellites and active payloads. Minimal text, large headings, parallax scrolling, smooth transitions, particle effects for realism.
+
+Marketplace Page: 3D interactive marketplace showing payload slots in orbit. Users can filter by service type, duration, provider, and price. Real-time availability updates via API. Clickable, rotatable, zoomable 3D payloads.
+
+Simulation Page: Interactive orbital simulator showing trajectory animations, orbital windows, and cost estimates. Users adjust parameters and see real-time visual feedback.
+
+Experiment Management Dashboard: Modern dashboard UI for uploading experiment code/data, live telemetry charts, and status tracking.
+
+Technical & Hardware Page: Showcase 3D mockups of modular payload adapters, animated connections to satellites and orbit paths.
+
+Futuristic Interactions: Hover effects, micro-animations, smooth transitions, subtle particle effects representing orbital debris and microgravity.
+
+Color Palette & Fonts: Dark mode with neon or metallic accents, sleek sans-serif typography, high contrast, Apple-style minimalism.
+
+API Integrations:
+
+Meteomatics Weather API (environmental & space weather data)
+
+Microsoft Planetary Computer API (global environmental datasets for LEO simulation)
+
+GitHub Copilot API (optional AI-assisted experiment code generation)
+
+Microsoft Azure / GCP Cloud APIs (host simulations, process telemetry, run experiments)
+
+Open Notify / Space-Track APIs (real-time satellite locations, orbital passes, ISS tracking)
+
+Mapbox / Google Maps API (tracking stations, launch locations, orbital coverage)
+
+Weather / Space Environment APIs (solar activity, geomagnetic storms, atmospheric drag)
+
+Payment APIs (Stripe/PayPal) for bookings, subscriptions, premium add-ons
+
+Technical Stack:
+
+Frontend: React.js + Three.js / Babylon.js for 3D visuals & animations
+
+Backend: Node.js / Python with REST/GraphQL API endpoints
+
+Database: PostgreSQL / Firebase for user, booking, and experiment data
+
+Cloud: GitHub Pages (static prototype), Azure or GCP (backend & API integrations)
+
+Orbital Simulation: Python/JS orbital mechanics library
+
+Animations & Prototype Features:
+
+3D rotating Earth with live satellites & payload slots
+
+Clickable payloads for booking, uploading, telemetry display
+
+Real-time orbital simulation powered by API data
+
+Sample-return capsule animation
+
+Smooth micro-interactions, hover effects, parallax scrolling, fade-ins
+
+Business Model:
+
+Transaction fee per booking (15–25%)
+
+Subscription for monitoring/analytics tools
+
+Premium: priority slots, rapid-return capsules, on-orbit data processing
+
+Regulatory & Safety Compliance:
+
+Orbital debris mitigation & re-entry safety visualized (icons/checklists)
+
+Licensing & export control considerations (FCC/NTIA/ITU equivalents)
+
+Insurance & liability model included
+
+Sustainability / End-of-Life:
+
+Payload disposal / deorbit plan
+
+Environmental responsibility
+
+Minimizing long-term space debris impact
+
+Commercial Validation:
+
+Sample pricing & unit economics ($/U-day, return capsule fees, revenue share)
+
+Estimated TAM for small labs, universities, startups
+
+Testimonials or realistic quotes from potential customers
+
+Technical Demo Readiness:
+
+3D marketplace & orbital simulation functional
+
+Fallback videos or animations if live demo fails
+
+Hardware mockup images or CAD renderings of payload adapters
+
+Team Roles & Workflow:
+
+Product, frontend, backend, simulation, hardware, business
+
+Workflow: booking → upload → execution → telemetry → return
+
+Innovation / Edge:
+
+Short-duration, modular, pay-per-use
+
+API-driven automation, sample-return service, on-orbit microservices
+
+Marketplace network effects
+
+Prototype Integration:
+
+Marketplace, simulation, and hardware mockup in cohesive demo
+
+Interactive elements: clickable 3D payloads, booking slots, telemetry charts
+
+Goal:
+Deliver a fully interactive, API-driven, futuristic 3D website that demonstrates the full LEOaaS experience, feels Apple-inspired, and impresses judges with innovation, interactivity, technical feasibility, commercial viability, and sustainability.
+
+Hackathon MVP Deliverables:
+
+Landing page + marketplace flow (mock listings, booking)
+
+Scheduler simulation (LEO slot selection, orbital pass windows, cost)
+
+Live demo: upload small job → simulate on-orbit execution → telemetry stream
+
+Physical mock adapter (photos / 3D model) + bill-of-materials
+
+2-minute pitch video + one-slide business model & TAM estimate
+
+Why Judges Will Like It:
+
+Clear societal & commercial impact
+
+Demoable in a weekend (software + simulated hardware)
+
+Scalable marketplace model with network effects
+
+Aligns with NASA objectives: science access, lowering launch barriers, responsible LEO utilization
