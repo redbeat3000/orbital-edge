@@ -1,12 +1,12 @@
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import OrbitSimulator from "@/components/OrbitSimulator";
+import Navigation from "../Navigation";
+import Footer from "../Footer";
+import OrbitSimulator from "../OrbitSimulator";
 
 export default function Simulator() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <div className="pt-32 pb-20">
         <OrbitSimulator />
       </div>

@@ -1,7 +1,14 @@
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Clock, DollarSign, Cpu, HardDrive, Thermometer, PackageCheck } from "lucide-react";
+import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
+import {
+  Clock,
+  DollarSign,
+  Cpu,
+  HardDrive,
+  Thermometer,
+  PackageCheck,
+} from "lucide-react";
 
 interface PayloadCardProps {
   id: string;
@@ -49,15 +56,25 @@ export default function PayloadCard({
   const ServiceIcon = serviceIcons[serviceType];
 
   return (
-    <Card className="hover-elevate transition-all duration-300 hover:scale-105 overflow-visible" data-testid={`card-payload-${id}`}>
+    <Card
+      className="hover-elevate transition-all duration-300 hover:scale-105 overflow-visible"
+      data-testid={`card-payload-${id}`}
+    >
       <CardHeader className="space-y-2">
         <div className="flex items-center justify-between">
-          <Badge variant={availabilityVariants[availability]} className="capitalize" data-testid={`badge-status-${availability}`}>
+          <Badge
+            variant={availabilityVariants[availability]}
+            className="capitalize"
+            data-testid={`badge-status-${availability}`}
+          >
             {availability}
           </Badge>
           <ServiceIcon className={`w-5 h-5 ${serviceColors[serviceType]}`} />
         </div>
-        <div className="text-xs font-mono text-muted-foreground" data-testid={`text-slot-id-${id}`}>
+        <div
+          className="text-xs font-mono text-muted-foreground"
+          data-testid={`text-slot-id-${id}`}
+        >
           SLOT-{id}
         </div>
       </CardHeader>
@@ -65,12 +82,17 @@ export default function PayloadCard({
       <CardContent className="space-y-4">
         <div>
           <div className="text-sm text-muted-foreground mb-1">Provider</div>
-          <div className="font-semibold" data-testid={`text-provider-${id}`}>{provider}</div>
+          <div className="font-semibold" data-testid={`text-provider-${id}`}>
+            {provider}
+          </div>
         </div>
 
         <div>
           <div className="text-sm text-muted-foreground mb-1">Service Type</div>
-          <div className="font-medium capitalize" data-testid={`text-service-${id}`}>
+          <div
+            className="font-medium capitalize"
+            data-testid={`text-service-${id}`}
+          >
             {serviceType.replace("-", " ")}
           </div>
         </div>
@@ -105,7 +127,10 @@ export default function PayloadCard({
           </div>
           <div className="flex items-center gap-1">
             <DollarSign className="w-5 h-5 text-primary" />
-            <span className="text-2xl font-bold text-primary" data-testid={`text-price-${id}`}>
+            <span
+              className="text-2xl font-bold text-primary"
+              data-testid={`text-price-${id}`}
+            >
               {price.toLocaleString()}
             </span>
           </div>
@@ -113,12 +138,16 @@ export default function PayloadCard({
       </CardContent>
 
       <CardFooter>
-        <Button 
-          className="w-full" 
+        <Button
+          className="w-full"
           disabled={availability !== "available"}
           data-testid={`button-book-${id}`}
         >
-          {availability === "available" ? "Book Now" : availability === "booked" ? "Fully Booked" : "Under Maintenance"}
+          {availability === "available"
+            ? "Book Now"
+            : availability === "booked"
+              ? "Fully Booked"
+              : "Under Maintenance"}
         </Button>
       </CardFooter>
     </Card>
