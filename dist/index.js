@@ -12,14 +12,12 @@ async function registerRoutes(app2) {
 import express from "express";
 import fs from "fs";
 import path2 from "path";
-import { createServer as createViteServer, createLogger } from "vite";
 
 // vite.config.ts
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
-var vite_config_default = defineConfig({
+var vite_config_default = (void 0)({
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -54,7 +52,7 @@ var vite_config_default = defineConfig({
 
 // server/vite.ts
 import { nanoid } from "nanoid";
-var viteLogger = createLogger();
+var viteLogger = (void 0)();
 function log(message, source = "express") {
   const formattedTime = (/* @__PURE__ */ new Date()).toLocaleTimeString("en-US", {
     hour: "numeric",
@@ -70,7 +68,7 @@ async function setupVite(app2, server) {
     hmr: { server },
     allowedHosts: true
   };
-  const vite = await createViteServer({
+  const vite = await (void 0)({
     ...vite_config_default,
     configFile: false,
     customLogger: {
