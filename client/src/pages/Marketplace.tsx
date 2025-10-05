@@ -6,7 +6,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Search, SlidersHorizontal } from "lucide-react";
 
 const mockPayloads = [
@@ -72,18 +77,19 @@ export default function Marketplace() {
   const [showFilters, setShowFilters] = useState(false);
 
   const filteredPayloads = mockPayloads.filter((payload) => {
-    const matchesSearch = 
+    const matchesSearch =
       payload.provider.toLowerCase().includes(searchQuery.toLowerCase()) ||
       payload.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
       payload.serviceType.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesPrice = payload.price >= priceRange[0] && payload.price <= priceRange[1];
+    const matchesPrice =
+      payload.price >= priceRange[0] && payload.price <= priceRange[1];
     return matchesSearch && matchesPrice;
   });
 
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <div className="pt-32 pb-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12">
@@ -104,8 +110,8 @@ export default function Marketplace() {
                 data-testid="input-search"
               />
             </div>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="gap-2"
               onClick={() => setShowFilters(!showFilters)}
               data-testid="button-toggle-filters"
@@ -132,8 +138,12 @@ export default function Marketplace() {
                     data-testid="slider-price-range"
                   />
                   <div className="flex items-center justify-between text-sm text-muted-foreground">
-                    <span data-testid="text-price-min">${priceRange[0].toLocaleString()}</span>
-                    <span data-testid="text-price-max">${priceRange[1].toLocaleString()}</span>
+                    <span data-testid="text-price-min">
+                      ${priceRange[0].toLocaleString()}
+                    </span>
+                    <span data-testid="text-price-max">
+                      ${priceRange[1].toLocaleString()}
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -141,8 +151,12 @@ export default function Marketplace() {
           )}
 
           <div className="mb-6 flex items-center justify-between">
-            <p className="text-muted-foreground" data-testid="text-results-count">
-              Showing {filteredPayloads.length} of {mockPayloads.length} available slots
+            <p
+              className="text-muted-foreground"
+              data-testid="text-results-count"
+            >
+              Showing {filteredPayloads.length} of {mockPayloads.length}{" "}
+              available slots
             </p>
           </div>
 
@@ -154,9 +168,11 @@ export default function Marketplace() {
 
           {filteredPayloads.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-xl text-muted-foreground">No payloads match your search criteria</p>
-              <Button 
-                variant="outline" 
+              <p className="text-xl text-muted-foreground">
+                No payloads match your search criteria
+              </p>
+              <Button
+                variant="outline"
                 className="mt-4"
                 onClick={() => {
                   setSearchQuery("");

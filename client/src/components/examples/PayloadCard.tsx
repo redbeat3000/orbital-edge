@@ -1,4 +1,4 @@
-import PayloadCard from '../PayloadCard'
+import PayloadCard from "@/PayloadCard";
 
 export default function PayloadCardExample() {
   return (
@@ -31,5 +31,5 @@ export default function PayloadCardExample() {
         specs={{ temp: "-40°C to +85°C" }}
       />
     </div>
-  )
+  );
 }
