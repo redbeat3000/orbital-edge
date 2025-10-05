@@ -1,4 +1,4 @@
-import PayloadCard from "./PayloadCard";
+import PayloadCard from "@/PayloadCard";
 
 export default function PayloadCardExample() {
   return (

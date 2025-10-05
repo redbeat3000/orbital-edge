@@ -20,7 +20,7 @@ export default defineConfig(async ({ mode }) => {
     plugins,
     resolve: {
       alias: {
-        "@": path.resolve(__dirname, "client/src"), // Removed trailing slash
+        "@": path.resolve(__dirname, "client/src"), // points to src correctly
         "@shared": path.resolve(__dirname, "shared"),
         "@assets": path.resolve(__dirname, "attached_assets"),
       },

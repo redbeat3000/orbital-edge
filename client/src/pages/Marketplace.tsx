@@ -1,17 +1,17 @@
 import { useState } from "react";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
-import PayloadCard from "../components/PayloadCard";
-import { Input } from "../components/ui/input";
-import { Label } from "../components/ui/label";
-import { Slider } from "../components/ui/slider";
-import { Button } from "../components/ui/button";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import PayloadCard from "@/components/PayloadCard";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Slider } from "@/components/ui/slider";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-} from "../components/ui/card";
+} from "@/components/ui/card";
 import { Search, SlidersHorizontal } from "lucide-react";
 
 const mockPayloads = [

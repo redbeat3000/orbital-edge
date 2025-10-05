@@ -1,6 +1,6 @@
-import Navigation from "../Navigation";
-import Footer from "../Footer";
-import OrbitSimulator from "../OrbitSimulator";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import OrbitSimulator from "@/components/OrbitSimulator";
 
 export default function Simulator() {
   return (

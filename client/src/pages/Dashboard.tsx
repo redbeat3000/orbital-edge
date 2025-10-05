@@ -1,9 +1,9 @@
-import Navigation from "../Navigation";
-import Footer from "../Footer";
-import TelemetryDashboard from "../TelemetryDashboard";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Button } from "../ui/button";
-import { Badge } from "../ui/badge";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import TelemetryDashboard from "@/components/TelemetryDashboard";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Upload, FileText, Play } from "lucide-react";
 
 export default function Dashboard() {

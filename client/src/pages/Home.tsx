@@ -1,10 +1,10 @@
-import Navigation from "../Navigation";
-import HeroSection from "../HeroSection";
-import ServicesGrid from "../ServicesGrid";
-import HowItWorks from "../HowItWorks";
-import TestimonialsSection from "../TestimonialsSection";
-import CTASection from "../CTASection";
-import Footer from "../Footer";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import ServicesGrid from "@/components/ServicesGrid";
+import HowItWorks from "@/components/HowItWorks";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
